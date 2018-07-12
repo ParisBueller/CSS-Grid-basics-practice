@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Grids</title>
+    <style>
+        .wrapper{
+            /* sets the display style to css grid */
+            display:grid;
+            /*sets the size of each grid column */
+            grid-template-columns: 40% 30% 30%;
+            /*
+            grid-column-gap: 1em;
+            grid-row-gap: 1em;
+            */
+            grid-gap: 1em;
+        }
+        /* grabs every div inside the "wrapper" div */
+        .wrapper > div{
+            background:#eee;
+            padding:1em;
+        }
+        /* grabs the odd divs inside the "wrapper", in this case every other div */
+        .wrapper > div:nth-child(odd){
+           background:#ddd; 
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio, 
+            deserunt iure! Dicta saepe quisquam perspiciatis quod. Odit deserunt 
+            laudantium asperiores rem, sint aspernatur inventore beatae voluptatibus 
+            voluptas enim iste ex architecto, recusandae at et placeat, in voluptates 
+            dolorem aut. Quos enim illum iure? Culpa alias, officia, sunt quod illo quo, 
+            doloremque assumenda tenetur dolorum totam facilis vitae quaerat? Error 
+            facilis eaque dicta vero minima nesciunt ex nisi deleniti illo a temporibus
+             sapiente eius harum recusandae tempora iste, doloribus aperiam ratione.
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Modi esse iusto, nemo ad repellendus illo adipisci dolor 
+            sit deserunt, at minus, aliquam iure quam eos? Corrupti,
+             molestias. Unde, libero blanditiis?
+        </div>
+        <div>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio, 
+                deserunt iure! Dicta saepe quisquam perspiciatis quod. Odit deserunt 
+                laudantium asperiores rem, sint aspernatur inventore beatae voluptatibus 
+                voluptas enim iste ex architecto, recusandae at et placeat, in voluptates 
+                dolorem aut. Quos enim illum iure? Culpa alias, officia, sunt quod illo quo, 
+                doloremque assumenda tenetur dolorum totam facilis vitae quaerat? Error 
+                facilis eaque dicta vero minima nesciunt ex nisi deleniti illo a temporibus
+                 sapiente eius harum recusandae tempora iste, doloribus aperiam ratione.
+            </div>
+            <div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Modi esse iusto, nemo ad repellendus illo adipisci dolor 
+                sit deserunt, at minus, aliquam iure quam eos? Corrupti,
+                 molestias. Unde, libero blanditiis?
+            </div>
+
+
+    </div>
+    
+</body>
+</html>
